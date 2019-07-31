@@ -1,0 +1,426 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lo",
+				"longestcollatz"
+			],
+			[
+				"pri",
+				"println"
+			],
+			[
+				"pro",
+				"prodadjingrid"
+			],
+			[
+				"pre",
+				"prevState"
+			],
+			[
+				"han",
+				"handleItemRemoved"
+			],
+			[
+				"clip",
+				"clipboardStack"
+			],
+			[
+				"wr",
+				"writeText"
+			],
+			[
+				"wri",
+				"writeImage"
+			],
+			[
+				"login",
+				"loginfail"
+			],
+			[
+				"ge",
+				"getRequestDispatcher"
+			],
+			[
+				"Res",
+				"ResultSetMetaData"
+			],
+			[
+				"sub",
+				"subCatRS"
+			],
+			[
+				"log",
+				"loginfailed"
+			],
+			[
+				"user",
+				"userName"
+			],
+			[
+				"H",
+				"HttpServletResponse"
+			],
+			[
+				"cont",
+				"contactNumber"
+			],
+			[
+				"Link",
+				"LinkedList"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"inli",
+				"inline\tdisplay"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"ce",
+				"cellspacing\tAttr"
+			],
+			[
+				"boe",
+				"border\tproperty"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"re",
+				"reportissue"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"Lin",
+				"LinkedList"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"javac",
+			"make",
+			"cd",
+			"dir()",
+			"dir",
+			"pwd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/David/Downloads/Hercules Returns [1993,DVDRip,Алексеев,eng].avi",
+		"/C/Users/David/Desktop/thirteenproduct.txt",
+		"/C/Users/David/Documents/GitHub/kauri/client/package.json",
+		"/C/Users/David/Documents/GitHub/kauri/client/src/renderer/components/Editor/index.jsx",
+		"/C/Users/David/Documents/GitHub/kauri/client/src/renderer/components/Clipboard/index.jsx",
+		"/C/Users/David/Documents/GitHub/kauri/client/src/renderer/components/App/index.jsx",
+		"/C/Users/David/Documents/GitHub/kauri/client/node_modules/clipboard/dist/clipboard.js",
+		"/C/Users/David/Documents/GitHub/kauri/client/src/renderer/components/Clipboard/styles.scss",
+		"/C/Users/David/CLionProjects/untitled2/main.cpp",
+		"/C/Users/David/CLionProjects/untitled/main.cpp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/header.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/header.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/classes/StaffAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/classes/BeanBuilder.java",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/classes/UserAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/help.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/help.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/classes/Issue.java",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/classes/Person.java",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/classes/Login.java",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/landingPage.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/reportIssue.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/viewIssue.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/home.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/knowledgeBase.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/landingPage.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/viewIssue.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/browseIssues.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/home.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/user/knowledgeBase.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/browseIssues.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/staff/editIssue.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/index.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/project/WEB-INF/tables.sql",
+		"/C/apache-tomcat-8.5.38/webapps/project/register.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Issue.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Login.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/KnowledgeBase.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/StaffAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/UserAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/index.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/register.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/tables.sql",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Util.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/BeanBuilder.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/staff/browseIssues.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/staff/landingPage.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/staff/help.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/staff/home.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/staff/editIssue.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/staff/header.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/user/reportIssue.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/user/help.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/user/header.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Comment.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/user/knowledgeBase.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/staff/knowledgeBase.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/web.xml",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/SubCategory.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Person.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Category.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/ViewIssue.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Connect.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Config.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/DefineAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/register.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Beans/Person.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Beans/Issue.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/home.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/login.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/login.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Beans/SubCategory.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Beans/Comment.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Beans/Category.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Object/Issue.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Object/SubCategory.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Object/Person.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Object/Category.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/project/WEB-INF/classes/Object/Comment.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/css/style.css",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/KnowledgeBase.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/UserAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/reportIssue.html",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/header.html",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/header.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Config.class",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Config.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Connect.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Login.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/StaffAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Util.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Object/SubCategory.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Object/Person.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Object/Issue.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Object/Comment.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/classes/Object/Category.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/KnowledgeBase.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/UserAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/register.html",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/tables.sql",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/dynamicDropdown.js",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Objects/Person.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Objects/Issue.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/login.html",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/StaffAccess.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Classes/SubCategory.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Classes/User.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/index.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Classes/Comment.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Classes/Issue.java",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/dynamic dropdown menu demo.html",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Classes/Category.java",
+		"/C/apache-tomcat-8.5.38/webapps/c3237647_assignment2/mainMenu.jsp",
+		"/C/Users/David/Desktop/test.html",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/WEB-INF/src/Classes/Staff.java",
+		"/C/Users/David/Downloads/SENG2050-Assignment-3-master/WEB-INF/views/view-issue.jsp",
+		"/C/apache-tomcat-8.5.38/webapps/WebEngStuff/viewIssue.jsp",
+		"/C/Users/David/Desktop/WebEngStuff/HomeController.java",
+		"/C/Users/David/Desktop/WebEngStuff/README.md",
+		"/C/Users/David/Desktop/WebEngStuff/Help.jsp",
+		"/C/Users/David/Desktop/WebEngStuff/DataTable.java",
+		"/C/Users/David/Desktop/WebEngStuff/src/Classes/StaffAccess.java",
+		"/C/Users/David/Desktop/WebEngStuff/src/Category.java",
+		"/C/Users/David/Desktop/WebEngStuff/src/Issue.java",
+		"/C/Users/David/Desktop/WebEngStuff/src/Staff.java",
+		"/C/Users/David/Desktop/WebEngStuff/src/User.java",
+		"/C/Users/David/Desktop/WebEngStuff/web/WEB-INF/web.xml",
+		"/C/Users/David/Desktop/WebEngStuff/SENG2050_Ass3.iml"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 226.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 78.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "projecteuler.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
