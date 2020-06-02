@@ -2,11 +2,40 @@ import java.util.*;
 import java.math.*;
 public class projecteuler {
 	public static void main(String[] args) {
-		longestcollatz();
+		longestcollatz(1000000L);
 	}
 
-	public status void longestcollatz() {
-		;
+	public static void longestcollatz(long n) {
+		int max = 1;
+		long starter = 1L;
+		Map<Long, Integer> found = new HashMap<>();
+		for (long i = 1; i < n; i++) {
+			int c = collatzCalc(i, found);
+			if (c > max) {
+				max = c;
+				starter = i;
+			}
+		}
+		System.out.println("" + starter + " " + max);
+	}
+
+	private static int collatzCalc(long n, Map<Long, Integer> found) {
+		int result = 1;
+		long curr = n;
+		while (curr != 1) {
+			if (curr % 2 == 0)
+				curr /= 2;
+			else
+				curr = 3 * curr + 1;
+
+			if (found.containsKey(curr)) {
+				result += found.get(curr);
+				curr = 1;
+			} else
+				result++;
+		}
+		found.put(n, result);
+		return result;
 	}
 
 	public static void sumhundredfifty() {
@@ -226,6 +255,7 @@ public class projecteuler {
 	public static void sumprimesundern(int n) {
 		boolean prime[] = new boolean[n];
 		Arrays.fill(prime, true);
+		//this function is Eratosthenes' Seive
 		for (int i = 2; i * i < n; i++)
 			if (prime[i])
 				for (int j = i * 2; j < n; j += i)
