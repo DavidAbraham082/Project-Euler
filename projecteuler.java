@@ -2,9 +2,62 @@ import java.util.*;
 import java.math.*;
 public class projecteuler {
 	public static void main(String[] args) {
-		longestcollatz(1000000L);
+		System.out.println(digitSum());
 	}
 
+	//calculates digit sum of 2^1000
+	public static long digitSum() {
+		long result = 0;
+		BigInteger bi = new BigInteger("2");
+		bi = bi.pow(1000);
+		char[] biArray = bi.toString().toCharArray();
+		for (char a : biArray) {
+			result += Character.getNumericValue(a);
+		}
+		return result;
+	}
+
+	//calculates number of paths through a grid, travelling along gridlines,
+	//from the top-left to bottom-right corner, travelling only right and down
+	public static long latticePaths(int x, int y) {
+		long result = 0;
+		//trivial results
+		if (x == 0 || y == 0)
+			return result;
+		if (x == 1 || y == 1)
+			return 1;
+		if (x == 2)
+			return y;
+		if (y == 2)
+			return x;
+
+		//grid
+		long[][] lattice = new long[x][y];
+		//populate first row/column with 1, second row/column with index
+		//this is because 1xa grids have 1 path
+		//and 2xa grids have a paths
+		for (int i = 0; i < x; i++) {
+			lattice[0][i] = 1;
+			lattice[1][i] = i + 1;
+			lattice[i][0] = 1;
+			lattice[i][1] = i + 1;
+		}
+
+		result = latticePathsRecursive(x - 1, y - 1, lattice);
+		return result;
+	}
+
+	private static long latticePathsRecursive(int x, int y, long[][]lattice) {
+		long result = 0;
+		if (lattice[x][y] == 0) {
+			lattice[x][y] += latticePathsRecursive(x - 1, y, lattice);
+			lattice[x][y] += latticePathsRecursive(x, y - 1, lattice);
+		}
+		result = lattice[x][y];
+		return result;
+	}
+
+	//finds int < n with collatz sequence with most terms
 	public static void longestcollatz(long n) {
 		int max = 1;
 		long starter = 1L;
@@ -19,6 +72,7 @@ public class projecteuler {
 		System.out.println("" + starter + " " + max);
 	}
 
+	//calculates number of terms in collatz sequence for int n
 	private static int collatzCalc(long n, Map<Long, Integer> found) {
 		int result = 1;
 		long curr = n;
@@ -38,6 +92,7 @@ public class projecteuler {
 		return result;
 	}
 
+	//sums 150 bigintegers
 	public static void sumhundredfifty() {
 		BigInteger numbers[] = {
 		new BigInteger("37107287533902102798797998220837590246510135740250"),
@@ -150,6 +205,7 @@ public class projecteuler {
 		System.out.println(result);
 	}
 
+	//calculates first triangular number with >500 factors
 	public static void trianglenumbers() {
 		int factors = 0, trinum = 0, count = 1;
 		while (factors < 500) {
@@ -168,6 +224,7 @@ public class projecteuler {
 		System.out.println(trinum);
 	}
 
+	//calculates largest product of 4 adjacent numbers in a grid
 	public static void gridlargestproduct () {
 		int[][] grid = {
 			{8,2,22,97,38,15,0,40,0,75,4,5,7,78,52,12,50,77,91,8},
@@ -234,8 +291,24 @@ public class projecteuler {
 		System.out.println(max);
 	}
 
-	public static void thirteenproduct() {
-		String in = "7316717653133062491922511967442657474235534919493496983520312774506326239578318016984801869478851843858615607891129494954595017379583319528532088055111254069874715852386305071569329096329522744304355766896648950445244523161731856403098711121722383113622298934233803081353362766142828064444866452387493035890729629049156044077239071381051585930796086670172427121883998797908792274921901699720888093776657273330010533678812202354218097512545405947522435258490771167055601360483958644670632441572215539753697817977846174064955149290862569321978468622482839722413756570560574902614079729686524145351004748216637048440319989000889524345065854122758866688116427171479924442928230863465674813919123162824586178664583591245665294765456828489128831426076900422421902267105562632111110937054421750694165896040807198403850962455444362981230987879927244284909188845801561660979191338754992005240636899125607176060588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450";
+	//calculates largest product of 13 consecutive digits of a long number
+	public static long thirteenproduct() {
+		String in = "731671765313306249192251196744265747423553491949349698" +
+		"352031277450632623957831801698480186947885184385861560789112949495" +
+		"459501737958331952853208805511125406987471585238630507156932909632" +
+		"952274430435576689664895044524452316173185640309871112172238311362" +
+		"229893423380308135336276614282806444486645238749303589072962904915" +
+		"604407723907138105158593079608667017242712188399879790879227492190" +
+		"169972088809377665727333001053367881220235421809751254540594752243" +
+		"525849077116705560136048395864467063244157221553975369781797784617" +
+		"406495514929086256932197846862248283972241375657056057490261407972" +
+		"968652414535100474821663704844031998900088952434506585412275886668" +
+		"811642717147992444292823086346567481391912316282458617866458359124" +
+		"566529476545682848912883142607690042242190226710556263211111093705" +
+		"442175069416589604080719840385096245544436298123098787992724428490" +
+		"918884580156166097919133875499200524063689912560717606058861164671" +
+		"094050775410022569831552000559357297257163626956188267042825248360" +
+		"0823257530420752963450";
 		Vector<Long> vec = new Vector<Long>();
 		for (char a : in.toCharArray()) {
 			vec.add(new Long(Character.getNumericValue(a)));
@@ -249,10 +322,11 @@ public class projecteuler {
 			if (prod != 0 && prod > product)
 				product = prod;
 		}
-		System.out.println(product);
+		return product;
 	}
 
-	public static void sumprimesundern(int n) {
+	//calculates sum of primes under n
+	public static int sumPrimesUnderN(int n) {
 		boolean prime[] = new boolean[n];
 		Arrays.fill(prime, true);
 		//this function is Eratosthenes' Seive
@@ -268,6 +342,6 @@ public class projecteuler {
 				total += i;
 		}
 
-		System.out.println(total);
+		return total;
 	}
 }
