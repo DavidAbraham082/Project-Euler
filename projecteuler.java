@@ -2,8 +2,26 @@ import java.util.*;
 import java.math.*;
 public class projecteuler {
 	public static void main(String[] args) {
-		System.out.println(digitSum());
+		System.out.println(thousandFib());
 	}
+	
+	//calculates index of first fibonacci number with 1000 digits
+	public static int thousandFib() {
+	int result = 0;
+	BigInteger[] fibstore = {new BigInteger("0"), new BigInteger("1"), new BigInteger("1")};
+
+	int i = 0, j, k;
+	while (fibstore[i].toString().length() < 1000) {
+	    result++;
+	    j = (i + 1) % 3;
+	    k = (j + 1) % 3;
+	    fibstore[i] = fibstore[j].add(fibstore[k]);
+	    i++;
+	    i %= 3;
+	}
+
+	return result;
+     	}
 
 	//calculates digit sum of 2^1000
 	public static long digitSum() {
