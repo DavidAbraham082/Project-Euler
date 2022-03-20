@@ -1,6 +1,6 @@
 import java.util.*;
 import java.math.*;
-public class projecteuler {
+public class projecteulerjava {
 	public static void main(String[] args) {
 		System.out.println(thousandFib());
 	}
@@ -344,7 +344,7 @@ public class projecteuler {
 	}
 
 	//calculates sum of primes under n
-	public static int sumPrimesUnderN(int n) {
+	public static long sumPrimesUnderN(int n) {
 		boolean prime[] = new boolean[n];
 		Arrays.fill(prime, true);
 		//this function is Eratosthenes' Seive
@@ -361,5 +361,23 @@ public class projecteuler {
 		}
 
 		return total;
+	}
+
+	//returns list of primes under n
+	public static Vector<Integer> primesUnderN(int n) {
+		boolean prime[] = new boolean[n];
+		Arrays.fill(prime, true);
+		//this function is Eratosthenes' Seive
+		for (int i = 2; i * i < n; i++)
+		if (prime[i])
+		for (int j = i * 2; j < n; j += i)
+		prime[j] = false;
+		
+		Vector<Integer> primes = new Vector<Integer>();
+		for (int i = 2; i * i < n; i++)
+			if (prime[i])
+				primes.add(i);
+
+		return primes;
 	}
 }
