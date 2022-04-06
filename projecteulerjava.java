@@ -350,7 +350,7 @@ public class projecteulerjava {
 		"0823257530420752963450";
 		Vector<Long> vec = new Vector<Long>();
 		for (char a : in.toCharArray()) {
-			vec.add(new Long(Character.getNumericValue(a)));
+			vec.add(Long.valueOf(Character.getNumericValue(a)));
 		}
 		long product = 0;
 		for (int i = 0; i < 987; i++) {
