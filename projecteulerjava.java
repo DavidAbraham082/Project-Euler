@@ -3,7 +3,7 @@ import java.math.*;
 
 public class projecteulerjava {
 	public static void main(String[] args) {
-		System.out.println('e');
+		System.out.println(latticePaths(4, 6));
 	}
 	
 	//calculates index of first fibonacci number with 1000 digits
@@ -57,10 +57,12 @@ public class projecteulerjava {
 		//this is because 1xa grids have 1 path
 		//and 2xa grids have a paths
 		for (int i = 0; i < x; i++) {
-			lattice[0][i] = 1;
-			lattice[1][i] = i + 1;
 			lattice[i][0] = 1;
 			lattice[i][1] = i + 1;
+		}
+		for (int i = 0; i < y; i++) {
+			lattice[0][i] = 1;
+			lattice[1][i] = i + 1;	
 		}
 
 		result = latticePathsRecursive(x - 1, y - 1, lattice);
