@@ -3,7 +3,7 @@ import java.math.*;
 
 public class projecteulerjava {
 	public static void main(String[] args) {
-		System.out.println(latticePaths(4, 6));
+		System.out.println(SumAmicableUnderN(10000));
 	}
 	
 	//calculates index of first fibonacci number with 1000 digits
@@ -402,5 +402,44 @@ public class projecteulerjava {
 				primes.add(i);
 
 		return primes;
+	}
+
+	//calculates sum of amicable numbers under n
+	public static int SumAmicableUnderN(int n) {
+		Integer factorSum[] = new Integer[n + 1];
+		Arrays.fill(factorSum, 0);
+
+		for (Integer prime : primesUnderN(n+1)) {
+			factorSum[prime] = 1;
+		}
+
+		for (int numberToCheck = 4; numberToCheck < n + 1; numberToCheck++)
+		{
+			if (factorSum[numberToCheck] == 1) continue;
+
+			for (int factor = 1; factor <= numberToCheck / 2; factor++)
+			{
+				if (numberToCheck % factor == 0)
+				{
+					factorSum[numberToCheck] += factor;
+				}
+			}
+		}
+
+		int finalSum = 0;
+
+		for (int candidate = 4; candidate < n + 1; candidate++)
+		{
+			if (factorSum[candidate] <= candidate) continue;
+			if (factorSum[candidate] > n) continue;
+			if (factorSum[factorSum[candidate]] == candidate)
+			{
+				finalSum += candidate + factorSum[candidate];
+				factorSum[factorSum[candidate]] = -1;
+				factorSum[candidate] = -1;
+			}
+		}
+
+		return finalSum;
 	}
 }
