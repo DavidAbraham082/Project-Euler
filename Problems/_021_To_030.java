@@ -3,6 +3,7 @@ package Problems;
 import java.io.FileNotFoundException;
 import java.math.BigInteger;
 import java.util.Arrays;
+import java.util.List;
 
 import Helpers.Helpers;
 
@@ -51,7 +52,22 @@ public class _021_To_030 {
   // alphabetise list and calculate sum of products of alphabetical value x list index
   public static void nameScores() throws FileNotFoundException
   {
-    String names = Helpers.GetFileContents("../ProblemData/022-names.txt").get(0);
+    String namesString = Helpers.GetFileContents("ProblemData/022-names.txt").get(0);
+    namesString = namesString.replaceAll("\"", "");
+    List<String> names = Arrays.asList(namesString.split(","));
+    names.sort(null);
+
+    int finalSum = 0;
+
+    for (String name : names) {
+      int alphaSum = 0;
+      for (char chara : name.toCharArray()) {
+        alphaSum += (int)chara - 64;
+      }
+      finalSum += alphaSum * (names.indexOf(name) + 1);
+    }
+
+    System.out.println(finalSum);
   }
   
   // PROBLEM 25
