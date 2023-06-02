@@ -46,16 +46,12 @@ public class _021_To_030 {
 
 		return finalSum;
 	}
-  
+
   // PROBLEM 22
   // alphabetise list and calculate sum of products of alphabetical value x list index
-  public static void nameScores()
+  public static void nameScores() throws FileNotFoundException
   {
-    try {
-      String names = Helpers.GetFileContents("../ProblemData/022-names.txt").get(0);
-    } catch (FileNotFoundException e) {
-      System.out.println("File not found!");
-    }
+    String names = Helpers.GetFileContents("../ProblemData/022-names.txt").get(0);
   }
   
   // PROBLEM 25

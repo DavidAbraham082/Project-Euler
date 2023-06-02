@@ -109,21 +109,13 @@ public class _011_To_020 {
 
   // PROBLEM 13
 	// sums 150 bigintegers
-	public static void sumhundredfifty() {
-		try
-		{
-			BigInteger sum = new BigInteger("0");
-			var numStrings = Helpers.GetFileContents("../ProblemData/013-50-digit-numbers.txt");
-			for (String number : numStrings) {
-				sum = sum.add(new BigInteger(number));
-			}
-			System.out.println(sum);
+	public static void sumhundredfifty() throws FileNotFoundException {
+		BigInteger sum = new BigInteger("0");
+		var numStrings = Helpers.GetFileContents("../ProblemData/013-50-digit-numbers.txt");
+		for (String number : numStrings) {
+			sum = sum.add(new BigInteger(number));
 		}
-		catch (FileNotFoundException ex)
-		{
-			System.out.println("File not found!");
-			return;
-		}
+		System.out.println(sum);
 	}
   
   // PROBLEM 14
