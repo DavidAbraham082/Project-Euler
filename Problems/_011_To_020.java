@@ -111,7 +111,7 @@ public class _011_To_020 {
 	// sums 150 bigintegers
 	public static void sumhundredfifty() throws FileNotFoundException {
 		BigInteger sum = new BigInteger("0");
-		var numStrings = Helpers.GetFileContents("../ProblemData/013-50-digit-numbers.txt");
+		var numStrings = Helpers.GetFileContents("ProblemData/013-50-digit-numbers.txt");
 		for (String number : numStrings) {
 			sum = sum.add(new BigInteger(number));
 		}
